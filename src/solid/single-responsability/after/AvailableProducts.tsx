@@ -1,9 +1,10 @@
-import { useProducts } from './hooks/useProducts'
+import ProductItem from "./components/ProductItem";
+import { useProducts } from "./hooks/useProducts";
 
-import { TProduct } from './types'
+import { TProduct } from "./types";
 
 const AvailableProducts = () => {
-  const { products } = useProducts()
+  const { products } = useProducts();
 
   const hasAvailableProduct = (product: TProduct) => product.hasAvailable;
 
@@ -11,12 +12,8 @@ const AvailableProducts = () => {
     <ul>
       {products
         .filter((product) => hasAvailableProduct(product))
-        .map(({ id, name, price, productImage }) => (
-          <li key={id}>
-            <img src={productImage} />
-            <h3>{name}</h3>
-            <span>{price}</span>
-          </li>
+        .map((filteredProduct) => (
+          <ProductItem key={filteredProduct.id} {...filteredProduct} />
         ))}
     </ul>
   );
