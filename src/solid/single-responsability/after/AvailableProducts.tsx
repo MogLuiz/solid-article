@@ -1,16 +1,13 @@
-import { getOnlyAvailableProduct } from "./utils/getOnlyAvailableProduct";
-
 import ProductItem from "./components/ProductItem";
 
-import { useProducts } from "./hooks/useProducts";
-
+import { useAvailableProducts } from "./hooks/useAvailableProducts";
 
 const AvailableProducts = () => {
-  const { products } = useProducts();
+  const { availableProducts } = useAvailableProducts();
 
   return (
     <ul>
-      {getOnlyAvailableProduct(products).map((filteredProduct) => (
+      {availableProducts.map((filteredProduct) => (
         <ProductItem key={filteredProduct.id} {...filteredProduct} />
       ))}
     </ul>
