@@ -24,7 +24,7 @@ Elevando Aplicações React com os Princípios SOLID
 
 ## :books: Artigos
 
--   [x] [Single Responsibility](https://www.linkedin.com/post/edit/6973087866335707136/)
+-   [x] [Single Responsibility](https://www.linkedin.com/pulse/elevando-aplica%25C3%25A7%25C3%25B5es-react-com-o-princ%25C3%25ADpio-solid-de-single-henrique)
 -   [ ] [Open-Closed](https://github.com/MogLuiz/solid-article)
 -   [ ] [Liskov Substitution](https://github.com/MogLuiz/solid-article)
 -   [ ] [Interface Segregation](https://github.com/MogLuiz/solid-article)
